@@ -1,12 +1,5 @@
-let fname = 'Ryan';
-let lname = 'D';
-let age = prompt("Guess Ryan's age");
+function welcome(user="Mystery Person", message='Good day to you'){
+    alert(`Hello ${user}, ${message}`);
+}
 
-// //OLD way
-
-// const result = fname +' '+lname+' '+age+' years old';
-// alert(result);
-
-
-let result = `${fname} ${lname} is ${age} years old`;
-alert(result);
+welcome('Jakson');
