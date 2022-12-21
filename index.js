@@ -1,3 +1,8 @@
-var name = "Ryan";
-name = 'Zen';
+
+
+if (true) {
+    let name = "Ryan";
+}
+
+
 alert(name);
