@@ -1,6 +1,2 @@
-let uniStudent = ({name, university}) => { 
-    console.log(`${name} from ${university}`);
-
-};
-
-uniStudent({ name: 'Ryan', university: 'Harvard University' });
+let [,mountain]=['Everest','Fish Tail', 'Annapurna'];
+console.log(mountain)
