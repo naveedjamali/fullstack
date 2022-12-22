@@ -1,10 +1,6 @@
-var name = 'Everest'
-var height = 8848;
+var mountains = ['Everest','Fish Tail', 'Annapurna'];
+var mountainsFromJapan = ['Fuji'];
 
-var output = function(){
-    console.log(`MT. ${this.name} is ${this.height} meters long`)
-}
 
-let adventureClimbing = {name, height, output};
-
-adventureClimbing.output();
+var allMountains = [...mountains,...mountainsFromJapan];
+console.log(allMountains)
