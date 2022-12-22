@@ -1,10 +1,14 @@
-let nepal = {
-    mountains: ['Everest', 'Fish Tail', 'Annapura'],
-    printWithDash: function () {
-        setTimeout(() =>
-            console.log(this.mountains.join(' - '))
-            , 3000);
-    }
+let thingsTodo = {
+    morning:"Exercise",
+    afternoon:'coding',
+    evening:'Watch movies',
+    night:['Sleep','Dream']
 }
 
-nepal.printWithDash();
+let {morning,afternoon} = thingsTodo;
+
+console.log(morning);
+console.log(afternoon);
+thingsTodo.morning='Singing';
+console.log('morning in windows',morning);
+console.log('morning in object',thingsTodo.morning);
