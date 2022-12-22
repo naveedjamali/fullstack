@@ -1,6 +1,13 @@
-var mountains = ['Everest','Fish Tail', 'Annapurna'];
-var mountainsFromJapan = ['Fuji'];
+var day= {
+    breakfast:'tea and bread',
+    lunch:'biryani with dahi',
+}
+
+var night = {
+    dinner: 'potato curry'
+}
 
 
-var allMountains = [...mountains,...mountainsFromJapan];
-console.log(allMountains)
+var meal = {...day, ...night};
+
+console.log(meal)
