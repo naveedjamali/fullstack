@@ -1,13 +1,6 @@
-var day= {
-    breakfast:'tea and bread',
-    lunch:'biryani with dahi',
-}
+var rivers = ['chinab','ravi','satlij', 'indus'];
 
-var night = {
-    dinner: 'potato curry'
-}
-
-
-var meal = {...day, ...night};
-
-console.log(meal)
+var [first, second, ...rest] = rivers;
+console.log(first);
+console.log(second);
+console.log(rest);
