@@ -1,5 +1,4 @@
-let uniStudent = student => { 
-    let {name, university} = student;
+let uniStudent = ({name, university}) => { 
     console.log(`${name} from ${university}`);
 
 };
