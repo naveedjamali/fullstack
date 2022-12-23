@@ -1,6 +1,12 @@
-var rivers = ['chinab','ravi','satlij', 'indus'];
+function Holiday(destination, days){
+    this.days=days;
+    this.destination = destination;
+}
 
-var [first, second, ...rest] = rivers;
-console.log(first);
-console.log(second);
-console.log(rest);
+Holiday.prototype.info = function(){
+    console.log(`${this.destination} | ${this.days} days`);
+}
+
+var nepal = new Holiday("Nepal", 30);
+
+nepal.info();
