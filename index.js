@@ -1,12 +1,13 @@
-function Holiday(destination, days){
-    this.days=days;
-    this.destination = destination;
+class Holiday{
+    constructor(destination, days){
+        this.destination = destination;
+        this.days = days;
+    }
+
+    info(){
+        console.log(`${this.destination} will take ${this.days} days`);
+    }
 }
 
-Holiday.prototype.info = function(){
-    console.log(`${this.destination} | ${this.days} days`);
-}
-
-var nepal = new Holiday("Nepal", 30);
-
+const nepal = new Holiday('Nepal',30);
 nepal.info();
