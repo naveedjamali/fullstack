@@ -5,9 +5,20 @@ class Holiday{
     }
 
     info(){
-        console.log(`${this.destination} will take ${this.days} days`);
+        return `${this.destination} will take ${this.days} days`;
     }
 }
 
-const nepal = new Holiday('Nepal',30);
-nepal.info();
+class Vacation extends Holiday{
+    constructor(time, destination, days){
+        super(destination, days);
+        this.time = time;
+    }
+
+    info(){
+        return `${super.info()} in ${this.time} hours`;
+    }
+}
+
+const nepal = new Vacation(30,'Nepal',30);
+console.log(nepal.info());
