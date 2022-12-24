@@ -9,16 +9,18 @@ class Holiday{
     }
 }
 
-class Vacation extends Holiday{
-    constructor(time, destination, days){
+class Expedition extends Holiday{
+    constructor(gear, destination, days){
         super(destination, days);
-        this.time = time;
+        this.gear = gear;
     }
 
     info(){
-        return `${super.info()} in ${this.time} hours`;
+        return `${super.info()}, remember to bring your ${this.gear.join(" and your ")} also`;
     }
 }
 
-const nepal = new Vacation(30,'Nepal',30);
-console.log(nepal.info());
+const visitToNepal = new Expedition(["Sun glasses","Umbrella", "Camera"],'Nepal',30);
+
+console.log(visitToNepal.info());
+
