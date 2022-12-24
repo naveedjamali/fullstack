@@ -1,11 +1,22 @@
+import React from "react";
+import axios from "axios";
+import { Component } from "react";
 
-import './App.css';
 
-function App() {
- 
-  return <div className='App'>
-    <h1>We will be back!</h1>
-  </div>
+class App extends Component {
+  constructor(props){
+    super(props);
+
+    //state
+    this.state = {
+      users:[]
+    }
+  }
+
+  render() {
+    return <div className='App'>
+    </div>
+  };
 }
 
 export default App;
